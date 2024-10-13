@@ -24,9 +24,9 @@ async function scheduleTimer({
             { section: 8, startTime: "15:50", endTime: "16:35" },
             { section: 9, startTime: "16:40", endTime: "17:25" },
             { section: 10, startTime: "17:30", endTime: "18:15" },
-            { section: 11, startTime: "18:30", endTime: "19:15" },
-            { section: 12, startTime: "19:20", endTime: "20:05" },
-            { section: 13, startTime: "20:10", endTime: "20:55" }
+            { section: 11, startTime: "19:00", endTime: "19:45" },
+            { section: 12, startTime: "19:50", endTime: "20:35" },
+            { section: 13, startTime: "20:40", endTime: "21:25" }
         ], // 课程时间表，注意：总长度要和上边配置的节数加和对齐
     }
 }

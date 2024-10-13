@@ -6,17 +6,12 @@ async function scheduleHtmlProvider() {
     const cookie = document.cookie
     const UA = navigator.userAgent
     // 计算学期字段
-    const d = new Date()
-    var year = d.getFullYear()
-    const month = d.getMonth() + 1
-    var XNXQDM = 2022 - 2023 - 1
-    var term = 1
-    // 2-7月份视为第二学期
-    if (month > 1 && month < 8) {
-        term = 2
-        year--
+    const element = document.getElementById("dqxnxq2");
+    if (element) {
+        var XNXQDM = element.getAttribute("value");
+    } else {
+        await AIScheduleAlert("无法获取到学期信息");
     }
-    XNXQDM = year + "-" + (year + 1) + "-" + term
     try {
         const res = await fetch(url,
             {
