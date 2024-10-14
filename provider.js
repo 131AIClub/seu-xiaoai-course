@@ -20,7 +20,6 @@ async function scheduleHtmlProvider() {
                 credentials: "include",
                 "Access-Control-Allow-Origin": "*",
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
                     "Accept": "application/json, text/javascript, */*; q=0.01",
                     "Accept-Encoding": "gzip, deflate",
                     "Accept-Language": "zh-CN,zh;q=0.9",
